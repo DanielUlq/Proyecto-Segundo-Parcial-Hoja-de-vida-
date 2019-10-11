@@ -1,0 +1,183 @@
+/*cabe recalcar que !important es para que tenga un estilo se tenga en cuenta en todas las web que visitemos*/
+/*cabe recalcar que rem es un tama;o de medición*/
+/*cabe recalcar que la responsividad de media se empieza a notar cuando los pixeles tienen un minimo de 992, que vendria
+siendo el tama;o aproximado de una tablet*/
+
+
+body{  /*cuerpo de la página, tipos de letra utilizados*/
+	font-family:Muli,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+	padding-top:54px;
+	color:#868e96
+}
+
+
+/*media ayuda a la responsividad del sitio web*/
+@media (min-width:992px){
+	body{
+		padding-top:0;
+		padding-left:17rem
+	}
+}
+
+h1,h2,h3,h4,h5,h6{  /*tipos de letra utilizados*/
+	font-family:'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+	font-weight:700;
+	text-transform:uppercase;  /*Vista en mayusculas*/
+	color:#343a40
+}
+	
+h1{
+	font-size:6rem;
+	line-height:5.5rem
+}
+
+h2{
+	font-size:3.5rem
+}
+
+h3{
+	font-size:2rem
+}
+
+p.lead{
+	font-size:1.15rem;
+	font-weight:400
+}
+
+.subheading{
+	text-transform:uppercase;
+	font-weight:500;
+	font-family:'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+	font-size:1.5rem
+}
+
+
+/*se le aplica un estilo a los iconos*/
+.social-icons a{
+	display:inline-block;
+	height:3.5rem;
+	width:3.5rem;
+	background-color:#495057;
+	color:#fff!important;
+	border-radius:100%;
+	text-align:center;
+	font-size:1.5rem;
+	line-height:3.5rem;
+	margin-right:1rem
+}
+
+.social-icons a:last-child{   /*toma los atributos de su ultimo hijo*/
+	margin-right:0
+}
+
+.social-icons a:hover{  /*cuandos se pase el mouse sobre un icono cambiara su color*/
+	background-color:#bd5d38
+}
+
+.dev-icons{
+	font-size:3rem
+}
+
+.dev-icons .list-inline-item i:hover{
+	color:#bd5d38
+}
+
+#sideNav .navbar-nav .nav-item .nav-link{  /*cuandos sobre los links el mouse sobre un icono cambiara su color*/
+	font-weight:800;
+	letter-spacing:.05rem;
+	text-transform:uppercase /*transforma en mayuscula*/
+}
+#sideNav .navbar-toggler:focus{
+	outline-color:#d48a6e
+}
+
+/*inicio de media para agregar responsividad*/
+@media (min-width:992px){ /*cuando el tama;o de la pantalla este en minimo 992 px el menu cambiara y se volver desplegable*/
+	#sideNav{
+		text-align:center;
+		position:fixed;
+		top:0;
+		left:0;
+		display:flex;            /*cuando los elementos se aprieten se moveran debajo del otro*/
+		flex-direction:column;  /*los elemenos del menu se situaran en una sola columna*/
+		width:17rem;
+		height:100vh
+}
+
+#sideNav .navbar-brand{
+	display:flex;
+	margin:auto auto 0;
+	padding:.5rem
+}
+
+#sideNav .navbar-brand .img-profile{ 
+	max-width:10rem;
+	max-height:10rem;
+	border:.5rem solid rgba(255,255,255,.2)  /*la imagen de perfil tendra un contorno solido*/
+}
+
+#sideNav .navbar-collapse{
+	display:flex;
+	align-items:flex-start;
+	flex-grow:0;   /*cantidad de espacio a ocupar dentro del elemento*/
+	width:100%;
+	margin-bottom:auto
+}
+
+#sideNav .navbar-collapse .navbar-nav{
+	flex-direction:column;
+	width:100%
+}
+
+#sideNav .navbar-collapse .navbar-nav .nav-item{
+	display:block /*los item del menu estaran en bloque*/
+}
+
+#sideNav .navbar-collapse .navbar-nav .nav-item .nav-link{
+	display:block
+}
+
+}  /*termina media*/
+
+section.resume-section{    /*estilos para las secciones*/
+	padding-top:5rem!important;  
+	padding-bottom:5rem!important;
+	max-width:75rem
+}
+
+section.resume-section .resume-item .resume-date{
+	min-width:none
+}
+
+/*media ayuda a responsividad*/
+@media (min-width:768px){
+	section.resume-section{
+		min-height:100vh
+	}
+
+	section.resume-section .resume-item .resume-date{
+		min-width:18rem
+	}
+}
+
+@media (min-width:992px){
+	section.resume-section{
+		padding-top:3rem!important;
+		padding-bottom:3rem!important
+	}
+}
+
+.bg-primary{ /*clase bg primary incluida con bootstrap*/
+	background-color:#bd5d38!important
+}
+
+.text-primary{/*clase bg primary incluida con bootstrap*/
+	color:#bd5d38!important
+}
+a{
+	color:#bd5d38
+}
+
+a:active,a:focus,a:hover{  /*focus se activa cuando se hace un click, active cambia color cuando se presiona algun elemento con calse primaria*/
+	color:#824027
+}

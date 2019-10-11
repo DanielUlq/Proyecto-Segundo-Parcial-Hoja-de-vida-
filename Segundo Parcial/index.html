@@ -1,0 +1,330 @@
+<!DOCTYPE html>  <!--para usar etiquetas de HTML5-->
+<html lang="en">
+
+<head>
+  <!--para que sea reconocido por la RFC 3629 de la Internet Engineering Task Force (IETF)-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Curriculum Vitae</title> <!--titulo de la página-->
+
+  <!-- conectando elementos de Bootstrap con html -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- conectando fuentes e iconos con html -->
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+  <!-- conectando estilos para html -->
+  <link href="css/resume.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+<!--se realizo el menu de mi hoja de vida y mediante bootstrap se coloco a la izquierda-->
+
+<!--recalcar: los class son llamados desde los archivos que incorpora bootstrap y los css y scss(less)
+Las etiquetas span resaltan los textos-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+      <span class="d-block d-lg-none">Daniel Ramirez</span>   <!--span es un contenedor para aplicar estilos-->
+      <span class="d-none d-lg-block">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/Daniel.jpg" alt="">
+      </span>
+    </a>
+    <!--boton para desplegar menu cuando esta en tamaño ipad o celular-->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent"> <!--Div para el menu-->
+      <ul class="navbar-nav">     <!--ul lista de elementos del menu y li conformara cada elemento que contenga la lista-->
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#about">Acerca de mi</a> <!--Al hacer clik se dirige al apartado de acerca de mi-->
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#experience">Experiencia Laboral</a> <!--Al hacer click se dirige al apartado de experiencia-->
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#education">Educación</a> <!--Al hacer click se dirige al apartado de educación-->
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#skills">Logros</a> <!--Al hacer click se dirige al apartado de logros-->
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#interests">Intereses Personales</a> <!--Al hacer click se dirige al apartado de Interes-->
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#awards">Certificados</a> <!--Al hacer click se dirige al apartado de certificados-->
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!--contenido principal donde se podra navegar para ver los puntos localizados en el menu-->
+  <!--primero se visualizara lo relacionado con acerca de mi como parte principal de la página-->
+  <div class="container-fluid p-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
+      <div class="w-100">
+        <h1 class="mb-0">Daniel Enrique
+          <span class="text-primary">Ramirez Muralles</span>
+        </h1>
+        <div class="subheading mb-5"> Zona 3 de Villa Nueva Planes de Barcenas Sector Torrelianas · (502) 43943594 ·
+          <a href="mailto:danielcitycen@gmail.com">danielcitycen@gmail.com</a>  <!--Al dar click abre el correo y coloca mi dirección para poder enviar mensaje-->
+          <br>
+          <a href="https://www.youtube.com/watch?v=7JFOnMZwh84&t=25s" target="_blank">Quien soy?</a> <!--Mediante la etiqueta a se linkeara a un video explicativo de quien soy-->
+        </div>
+        <p class="lead mb-5">Tengo experiencia liderando y guiando grupos para el desarrollo de proyectos. <br> <span class="text-primary">Para contactarme de una manera más personal:</span> </p>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/danycitycen/?hl=es-la" target="_blank"> <!--Instagram-->
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=100003400374107" target="_blank"> <!--Facebook-->
+            <i class="fab fa-facebook-f"></i>
+          </a>  
+          
+          <br>
+          <p class="text-primary">Puede dar seguimiento a mis proyecto universitarios:</p>
+          <br>        
+          <a href="https://github.com/DanielUlq" target="_blank">
+            <i class="fab fa-github"></i>  <!--Github-->
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <hr class="m-0"> <!--marca una línea para dividir las secciones en la página-->
+    <!--en esta sección de la página se mostrara la experiencia con la que cuento actualmente-->
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
+      <div class="w-100">
+        <h2 class="mb-5">Experiencia</h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Desarrollador de aplicaciones Web</h3>
+            <div class="subheading mb-3">Desarrollo de aplicaciones inteligentes</div>
+            <p>Hasta la fecha actual cuento con 5 meses trabajando en el desarrollo de aplicaciones Web mediante variadas herramientas como 
+            lo son Java, PrimeFaces, Hibernate, PHP.</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">Mayo 2019 - Presente</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Maestro a nivel medio</h3>
+            <div class="subheading mb-3">Tecnologias de la información</div>
+            <p>Estuve trabajando en el area educativa a nivel medio desempeñando un nivel muy bueno en la clase de "Tecnologias de la información" para los grados de 4to y 5to bachillerato en computación.</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">Agosto 2016 - Noviembre 2017</span>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <hr class="m-0"> <!--marca una línea para dividir las secciones en la página-->
+
+    <!--Sección en la que se detalla el apartado de educación-->
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
+      <div class="w-100">
+        <h2 class="mb-5">Educación</h2>  <!--titulo para sección-->
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Universidad Mariano Gálvez</h3>
+            <div class="subheading mb-3">Licenciatura</div>
+            <div>Ingeniería en Sistemas de Información y Ciencias de la Computación</div>
+            <p>Actualmente curso el 4to año de mi carrera, estando en el 8vo Semestre</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">Febrero 2016 - Presente</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+          <div class="resume-content">
+            <h3 class="mb-0">Liceo Canadiense Sur</h3>
+            <div class="subheading mb-3">Bachillerato en computación</div>
+            <p>Tanto 4to como 5to bachillerato fueron estudiados en este establecimiento</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">Enero 2014 - Septiembre 2015</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+          <div class="resume-content">
+            <h3 class="mb-0">Liceo Canadiense Sur</h3>
+            <div class="subheading mb-3">Básicos</div>
+            <p>Los 3 niveles a nivel básico fueron estudiados en este establecimiento</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">Enero 2011 - Octubre 2013</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+          <div class="resume-content">
+            <h3 class="mb-0">Colegio Mixto Aurora Carmesi</h3>
+            <div class="subheading mb-3">Primaria</div>
+            <p>Todos los niveles con los que cuenta el nivel de primaria fueron estudiados en este establecimiento</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">Enero 2005 - Octubre 2010</span>
+          </div>
+        </div>                
+
+      </div>
+    </section>
+
+    <hr class="m-0"> <!--marca una línea para dividir las secciones en la página-->
+
+
+    <!--Sección en donde se muestran los logros y meritos obtenidos-->
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
+      <div class="w-100">
+        <h2 class="mb-5">Logros</h2>
+
+        <div class="subheading mb-3">Conocimiento de programas &amp; Herramientas</div>
+        <ul class="list-inline dev-icons">
+          <li class="list-inline-item">     <!--con la etiqueta li creamos una lista-->
+            <i class="fab fa-html5"></i>    <!--Mediante la etiqueta i creamos los elementos de la lista como iconos-->
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-css3-alt"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-js"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-bootstrap"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-less"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-java"></i>
+          </li>   
+          <li class="list-inline-item">
+            <i class="fas fa-database"></i>
+          </li>                  
+        </ul>
+
+        <div class="subheading mb-3">Dominio de los programas</div>
+        <ul class="fa-ul mb-0">
+          <li>                                       <!--con la etiqueta li creamos una lista-->
+            <i class="fa-li fa fa-check"></i>        <!--Mediante la etiqueta i creamos los elementos de la lista como iconos-->
+            HTML: 75%</li>                           <!--Luego se mostrara el nombre y el porcentaje del programa-->
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            CSS: 70%</li>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            JavaScript: 70%</li>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Bootstrap: 50%</li>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Less: 30%</li> 
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Java: 40%</li>   
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            SQL Server: 70%</li>                                
+        </ul>
+                   
+      </div>
+    </section>
+
+    <hr class="m-0"> <!--marca una línea para dividir las secciones en la página-->
+
+    <!--Sección en la que se mostrara los intereses personales-->
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
+      <div class="w-100">
+        <h2 class="mb-5">Intereses personales</h2>
+        <p>Ademas de ser estudiante de Ingeniería en sistemas y trabajar en el desarrollo de aplicaciones Web, disfruto de la mayor parte de mi tiempo al aire libre practicando deporte como el futbol, así como tambien aprendo acerca del desarrollo de videojuegos.</p>
+        <p class="mb-0">La mayoria de mi tiempo también lo aprovecho para explorar los ultimos avances tecnologicos en el mundo del desarrollo Front-End y Back-End.</p>
+      </div>
+    </section>
+
+    <hr class="m-0"> <!--marca una línea para dividir las secciones en la página-->
+
+    <!--Sección de certificaciones-->
+    <!--en el class se define el alineado, grid de los items-->
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards"> 
+      <div class="w-100">
+        <h2 class="mb-5">Certificaciones</h2>
+        <ul class="fa-ul mb-0">   <!--ul crea una lista -->
+          <li>                     <!--li define los elementos de la lista-->
+            <i class="fa-li fa fa-trophy text-warning"></i> <!--i permite poner un icono como elemento de la lista-->
+            Certificado "Fundamentos de HTML"        <!--luego se coloca el nombre de la certificación-->
+            <span class="d-lg-block">                <!--con span asignamos un estilo a la imagen-->
+              <img class="img-fluid img-profile mx-auto mb-2" src="img/html.jpg" alt=""> <!-- imagen del certificado-->
+            </span>
+          </li>
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            Certificado "Fundamentos de CSS"
+            <span class="d-lg-block">
+              <img class="img-fluid img-profile mx-auto mb-2" src="img/css.jpg" alt="">
+            </span>
+          </li>
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            Certificado "Fundamentos de JavaScript"
+            <span class="d-lg-block">
+              <img class="img-fluid img-profile mx-auto mb-2" src="img/JavaScript.jpg" alt="">
+            </span>
+          </li>
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            Certificado "Fundamentos de SQL"
+            <span class="d-lg-block">
+              <img class="img-fluid img-profile mx-auto mb-2" src="img/sql.jpg" alt="">
+            </span>
+          </li>
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            Taller liderazgo profesional UMG
+            <span class="d-lg-block">
+              <img class="img-fluid img-profile mx-auto mb-2" src="img/lider.jpg" alt="">
+            </span>
+          </li>
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            Titulo de Graduación "Bachillerato en Computación con orientación comercial"
+            <span class="d-lg-block">
+              <img class="img-fluid img-profile mx-auto mb-2" src="img/titulo.jpg" alt="">
+            </span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </div>
+
+  <!--se colocaron los script por debajo del contenido de la página debido a que generalmente son los archivos más pesados
+   de una página web-->
+  <!-- archivos de bootstrap que contienen JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- plugin de JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Se linkea el archivo JavaScript personal -->
+  <script src="js/resume.min.js"></script>
+
+</body>
+
+</html>
